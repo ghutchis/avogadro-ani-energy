@@ -1,6 +1,7 @@
 [project]
 authors = [{name = "Geoff Hutchison", email = "geoff.hutchison@gmail.com"}]
 dependencies = [
+  "avogadro>=2.0",
   "torch>=2.0",
   "torchani>=2.2",
   "numpy>=1.20",

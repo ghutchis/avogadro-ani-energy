@@ -8,7 +8,7 @@ import sys
 import numpy as np
 import torch
 
-from .energy import EnergyServer
+from avogadro.energy import EnergyServer
 
 # Conversion factors
 _HARTREE_TO_KJ_MOL = 2625.4996394799
