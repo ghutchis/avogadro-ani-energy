@@ -1,16 +1,16 @@
 [project]
 authors = [{name = "Geoff Hutchison", email = "geoff.hutchison@gmail.com"}]
 dependencies = [
-  "avogadro>=2.0",
+  "avogadro>=2.1.0",
   "torch>=2.0",
-  "torchani>=2.2",
+  "torchani>=2.11.0",
   "numpy>=1.20",
   "setuptools",
 ]
 license = "BSD-3-Clause"
 name = "avogadro-ani-energy"
 requires-python = ">=3.11,<3.13"
-version = "0.1.0"
+version = "0.1.1"
 description = "ANI-1x and ANI-2x energies and gradients"
 
 [project.scripts]
@@ -23,6 +23,11 @@ requires = ["hatchling"]
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/avogadro_ani_energy"]
+
+# .github/workflows/update-dependencies.yml checks PyPI / conda-forge daily for
+# these packages and opens a PR raising their ">=" floors and the version.
+[tool.update-dependencies]
+track = ["avogadro", "torchani"]
 
 [tool.avogadro]
 minimum-avogadro-version = "1.103"
