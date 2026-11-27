@@ -3,14 +3,14 @@ authors = [{name = "Geoff Hutchison", email = "geoff.hutchison@gmail.com"}]
 dependencies = [
   "avogadro>=2.1.0",
   "torch>=2.0",
-  "torchani>=2.11.0",
+  "torchani>=2.15.1",
   "numpy>=1.20",
   "setuptools",
 ]
 license = "BSD-3-Clause"
 name = "avogadro-ani-energy"
 requires-python = ">=3.11,<3.13"
-version = "0.1.1"
+version = "0.1.2"
 description = "ANI-1x and ANI-2x energies and gradients"
 
 [project.scripts]
